@@ -1,8 +1,7 @@
 import * as Papa from 'papaparse';
-import { request, gql, GraphQLClient, batchRequests } from 'graphql-request';
+import { gql, GraphQLClient, batchRequests } from 'graphql-request';
 import { promises as fs, existsSync } from 'fs';
 import * as path from 'path';
-import { graphql, buildSchema } from 'graphql'
 
 // https://developers.zenhub.com/explorer
 const endpoint = 'https://api.zenhub.com/public/graphql';
